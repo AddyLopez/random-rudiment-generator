@@ -13,17 +13,28 @@ body {
 }
 
 h1 {
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 0;
   font-size: 1rem;
+}
+button {
+  border-top: 3px solid hsl(33, 100%, 65%);
+  border-right: 3px solid hsl(33, 100%, 35%);
+  border-left: 3px solid hsl(33, 100%, 65%);
+  border-bottom: 3px solid hsl(33, 100%, 35%);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 20px;
+  background-color: hsl(28, 100%, 50%);
 }
 
 div.img-container {
-  margin: 25px auto 50px auto;
+  margin: 20px auto 40px auto;
 }
 
 figure {
   border-bottom: 2px ridge hsl(0, 0%, 37%);
-  padding: 15px 0;
+  padding: 12px 0;
   margin: 0 auto;
   width: 400px;
 }
@@ -36,4 +47,9 @@ img {
   border: hsl(0, 0%, 100%);
   border-radius: 1px;
   width: 100%;
+}
+
+button:active {
+  background-color: hsl(36, 100%, 45%);
+  transform: rotate(45deg);
 }
