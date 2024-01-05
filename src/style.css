@@ -17,16 +17,6 @@ h1 {
   margin-bottom: 0;
   font-size: 1rem;
 }
-button {
-  border-top: 3px solid hsl(33, 100%, 65%);
-  border-right: 3px solid hsl(33, 100%, 35%);
-  border-left: 3px solid hsl(33, 100%, 65%);
-  border-bottom: 3px solid hsl(33, 100%, 35%);
-  border-radius: 10px;
-  cursor: pointer;
-  padding: 20px;
-  background-color: hsl(28, 100%, 50%);
-}
 
 div.img-container {
   margin: 20px auto 40px auto;
@@ -49,7 +39,19 @@ img {
   width: 100%;
 }
 
-button:active {
+#submit {
+  background-color: hsl(28, 100%, 50%);
+  border-top: 3px solid hsl(33, 100%, 65%);
+  border-right: 3px solid hsl(33, 100%, 35%);
+  border-left: 3px solid hsl(33, 100%, 65%);
+  border-bottom: 3px solid hsl(33, 100%, 35%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  padding: 10px;
+}
+
+#submit:active {
   background-color: hsl(36, 100%, 45%);
   transform: rotate(45deg);
 }

@@ -9,7 +9,10 @@ export const types = [
 export const formatURL = (array) => {
   return array.map((element) => {
     return (element.src =
-      `${pathPrefix}${element["type"]}` + "/rudiment-" + `${element["id"]}`);
+      `${pathPrefix}${element["type"]}` +
+      "/rudiment-" +
+      `${element["id"]}` +
+      ".png");
   });
 };
 
