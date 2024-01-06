@@ -90,10 +90,12 @@ img {
   margin-top: 10px;
   font-family: "IM Fell Double Pica SC", serif;
   letter-spacing: 1px;
+  font-size: 0.4rem;
   transition: all 2500ms ease-in-out;
 }
 
 #submit:active {
   background-color: hsl(36, 100%, 45%);
   transform: translate(2px, 1px);
+  transition: transform 0s ease-in-out;
 }
