@@ -4,18 +4,37 @@ html {
 
 body {
   background-color: hsl(240, 16%, 20%);
-  box-sizing: border-box;
   color: hsl(0, 0%, 100%);
   font-family: "IM Fell Double Pica SC", serif;
   font-weight: bold;
   letter-spacing: 1px;
   text-align: center;
+  transition: all 2500ms ease-in-out;
 }
 
 h1 {
   margin-top: 20px;
   margin-bottom: 0;
   font-size: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 25px auto;
+}
+
+form section {
+  font-size: 0.4rem;
+  padding: 5px 0;
+}
+
+div.form-container {
+  margin: 0 auto;
+  width: 40%;
 }
 
 div.img-container {
@@ -39,6 +58,14 @@ img {
   width: 100%;
 }
 
+#checklist {
+  text-align: right;
+}
+
+#number-of-rudiments {
+  text-align: left;
+}
+
 #submit {
   background-color: hsl(28, 100%, 50%);
   border-top: 3px solid hsl(33, 100%, 65%);
@@ -49,9 +76,12 @@ img {
   color: hsl(0, 0%, 100%);
   cursor: pointer;
   padding: 10px;
+  margin-top: 10px;
+  font-family: "IM Fell Double Pica SC", serif;
+  letter-spacing: 1px;
 }
 
 #submit:active {
   background-color: hsl(36, 100%, 45%);
-  transform: rotate(45deg);
+  transform: translate(2px, 1px);
 }

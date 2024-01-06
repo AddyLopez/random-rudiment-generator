@@ -14,49 +14,56 @@
   </head>
   <body>
     <h1>40 Essential Rudiments Generator</h1>
-    <form action="./index.html" method="POST">
-      <section id="checklist">
-        <label for="roll">Roll Rudiments</label>
-        <input
-          type="checkbox"
-          id="roll"
-          name="category"
-          value="Roll Rudiments"
-        />
-        <label for="roll">Diddle Rudiments</label>
-        <input
-          type="checkbox"
-          id="diddle"
-          name="category"
-          value="Diddle Rudiments"
-        />
-        <label for="roll">Flam Rudiments</label>
-        <input
-          type="checkbox"
-          id="flam"
-          name="category"
-          value="Flam Rudiments"
-        />
-        <label for="roll">Drag Rudiments</label>
-        <input
-          type="checkbox"
-          id="drag"
-          name="category"
-          value="Drag Rudiments"
-        />
-      </section>
-      <label for="number-of-rudiments"> Number of rudiments shown: </label>
-      <input
-        type="number"
-        id="number-of-rudiments"
-        name="number-of-rudiments"
-        min="1"
-        max="10"
-        required
-      />
-      <input type="submit" id="submit" value="Submit" disabled />
-    </form>
-    <button></button>
+    <div class="form-container">
+      <form action="./index.html" method="POST">
+        <section>
+          <label for="number-of-rudiments"> Number of Rudiments Shown: </label>
+          <input
+            type="number"
+            id="number-of-rudiments"
+            name="number-of-rudiments"
+            min="1"
+            max="10"
+            required
+          />
+        </section>
+        <section id="checklist">
+          <label for="roll">Roll Rudiments</label>
+          <input
+            type="checkbox"
+            id="roll"
+            name="category"
+            value="Roll Rudiments"
+          />
+          <br />
+          <label for="roll">Diddle Rudiments</label>
+          <input
+            type="checkbox"
+            id="diddle"
+            name="category"
+            value="Diddle Rudiments"
+          />
+          <br />
+          <label for="roll">Flam Rudiments</label>
+          <input
+            type="checkbox"
+            id="flam"
+            name="category"
+            value="Flam Rudiments"
+          />
+          <br />
+          <label for="roll">Drag Rudiments</label>
+          <input
+            type="checkbox"
+            id="drag"
+            name="category"
+            value="Drag Rudiments"
+          />
+          <br />
+        </section>
+        <input type="submit" id="submit" value="SUBMIT" disabled />
+      </form>
+    </div>
     <div class="img-container">
       <figure>
         <img src="./images/placeholder.png" alt="Triple Ratamacue" />
