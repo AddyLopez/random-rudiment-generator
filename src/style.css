@@ -28,7 +28,7 @@ form {
 }
 
 form section {
-  font-size: 0.4rem;
+  font-size: 0.45rem;
   padding: 5px 0;
 }
 
@@ -39,6 +39,14 @@ div.form-container {
 
 div.img-container {
   margin: 20px auto 40px auto;
+}
+
+#roll,
+#diddle,
+#flam,
+#drag {
+  accent-color: hsl(28, 100%, 50%);
+  cursor: pointer;
 }
 
 figure {
@@ -63,7 +71,10 @@ img {
 }
 
 #number-of-rudiments {
-  text-align: left;
+  color: hsl(240, 16%, 20%);
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
 }
 
 #submit {
