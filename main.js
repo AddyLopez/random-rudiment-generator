@@ -4,7 +4,7 @@ const logData = (data) => console.log(data);
 logData(rudiments);
 
 const container = document.getElementById("img-container");
-const fragment = document.createDocumentFragment();
+const fragment = document.createDocumentFragment(); // See https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment#usage_notes
 
 rudiments.forEach((rudiment) => {
   if (rudiment["id"] === "01" || rudiment["id"] === "02") {
