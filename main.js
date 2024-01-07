@@ -3,8 +3,6 @@ import { rudiments } from "./forty-essential-rudiments.js";
 const logData = (data) => console.log(data);
 logData(rudiments);
 
-export { logData };
-
 const container = document.getElementById("img-container");
 const fragment = document.createDocumentFragment();
 
@@ -22,5 +20,5 @@ rudiments.forEach((rudiment) => {
     return;
   }
 });
-console.log(fragment);
+//console.log(fragment);
 container.appendChild(fragment);
