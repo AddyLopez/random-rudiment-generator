@@ -1,4 +1,4 @@
-export const pathPrefix = "./src/images/40_Essential_Rudiments/";
+export const pathPrefix = "./images/40_Essential_Rudiments/";
 export const types = [
   "Roll_Rudiments",
   "Diddle_Rudiments",
