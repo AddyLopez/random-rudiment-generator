@@ -3,6 +3,30 @@ import { rudiments } from "./forty-essential-rudiments.js";
 const logData = (data) => console.log(data);
 logData(rudiments);
 
+const selectRandom = (category) => {
+  const getRandomNumber = (min, max) => {
+    const randomNumber = Math.floor(Math.random() * max) + 1;
+    if (randomNumber > min) {
+      return randomNumber.toString();
+    } else {
+      getRandomNumber(min, max);
+    }
+  };
+
+  switch (category) {
+    case "Roll Rudiments":
+      return getRandomNumber(0, 15);
+    case "Diddle Rudiments":
+      return getRandomNumber(15, 19);
+    case "Flam Rudiments":
+      return getRandomNumber(19, 30);
+    case "Drag Rudiments":
+      return getRandomNumber(30, 40);
+    default:
+      return;
+  }
+};
+
 const container = document.getElementById("img-container");
 const fragment = document.createDocumentFragment(); // See https://developer.mozilla.org/en-US/docs/Web/API/Document/createDocumentFragment#usage_notes
 
