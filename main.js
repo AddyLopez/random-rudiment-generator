@@ -1,47 +1,42 @@
 import { rudiments } from "./forty-essential-rudiments.js";
+import { getRandomIndex } from "./helper-function.js";
 
 const logData = (data) => console.log(data);
 logData(rudiments);
 
-const selectRandom = (category) => {
-  const rudimentsSelected = [];
+const selectRandom = (categories) => {
+  const indicesSelected = [];
 
-  const getRandomIndex = (min, max) => {
-    const randomIndex = Math.floor(Math.random() * max);
-    if (randomIndex >= min) {
-      return randomIndex;
-    } else {
-      getRandomIndex(min, max);
+  categories.forEach((category) => {
+    /* category1 (roll rudiments): indices 0 to 14,
+       category2 (diddle rudiments): indices 15 to 18,
+       category3 (flam rudiments): indices 19 to 29,
+       category4 (drag rudiments): indices 30 to 39 
+       max adjusted by +1 to account for the flooring function in getRandomIndex helper function */
+
+    switch (category) {
+      case "category1":
+        const rollIndex = getRandomIndex(0, 15);
+        indicesSelected.push(rollIndex);
+        break;
+      case "category2":
+        const diddleIndex = getRandomIndex(15, 19);
+        indicesSelected.push(diddleIndex);
+        break;
+      case "category3":
+        const flamIndex = getRandomIndex(19, 30);
+        indicesSelected.push(flamIndex);
+      case "category4":
+        const dragIndex = getRandomIndex(30, 40);
+        indicesSelected.push(dragIndex);
+        break;
+      default:
+        console.log("Error: no checkboxes selected.");
     }
-  };
+  });
+  console.log(indicesSelected);
 
-  /* roll rudiments: indices 0 to 14,
-     diddle rudiments: indices 15 to 18,
-     flam rudiments: indices 19 to 29,
-     drag rudiments: indices 30 to 39 
-     max adjusted by +1 to account for the flooring function above */
-
-  switch (category) {
-    case "Roll Rudiments":
-      const rollIndex = getRandomIndex(0, 15);
-      rudimentsSelected.push(rollIndex);
-      break;
-    case "Diddle Rudiments":
-      const diddleIndex = getRandomIndex(15, 19);
-      rudimentsSelected.push(diddleIndex);
-      break;
-    case "Flam Rudiments":
-      const flamIndex = getRandomIndex(19, 30);
-      rudimentsSelected.push(flamIndex);
-    case "Drag Rudiments":
-      const dragIndex = getRandomIndex(30, 40);
-      rudimentsSelected.push(dragIndex);
-      break;
-    default:
-      console.log("Error: no checkboxes selected.");
-  }
-
-  return rudimentsSelected;
+  return indicesSelected;
 };
 
 const container = document.getElementById("img-container");
@@ -77,6 +72,8 @@ const onSubmit = (event) => {
   const categories = Object.keys(data);
   categories.shift();
   console.log(categories);
+
+  selectRandom(categories);
 
   form.reset();
 };
