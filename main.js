@@ -29,7 +29,6 @@ console.log(form);
 const onSubmit = (event) => {
   event.preventDefault();
   const formData = new FormData(form);
-  console.log(formData.get("category"));
 
   const data = Object.fromEntries(formData); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
   console.log(data);
