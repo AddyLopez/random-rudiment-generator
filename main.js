@@ -4,27 +4,44 @@ const logData = (data) => console.log(data);
 logData(rudiments);
 
 const selectRandom = (category) => {
-  const getRandomNumber = (min, max) => {
-    const randomNumber = Math.floor(Math.random() * max) + 1;
-    if (randomNumber > min) {
-      return randomNumber.toString();
+  const rudimentsSelected = [];
+
+  const getRandomIndex = (min, max) => {
+    const randomIndex = Math.floor(Math.random() * max);
+    if (randomIndex >= min) {
+      return randomIndex;
     } else {
-      getRandomNumber(min, max);
+      getRandomIndex(min, max);
     }
   };
 
+  /* roll rudiments: indices 0 to 14,
+     diddle rudiments: indices 15 to 18,
+     flam rudiments: indices 19 to 29,
+     drag rudiments: indices 30 to 39 
+     max adjusted by +1 to account for the flooring function above */
+
   switch (category) {
     case "Roll Rudiments":
-      return getRandomNumber(0, 15);
+      const rollIndex = getRandomIndex(0, 15);
+      rudimentsSelected.push(rollIndex);
+      break;
     case "Diddle Rudiments":
-      return getRandomNumber(15, 19);
+      const diddleIndex = getRandomIndex(15, 19);
+      rudimentsSelected.push(diddleIndex);
+      break;
     case "Flam Rudiments":
-      return getRandomNumber(19, 30);
+      const flamIndex = getRandomIndex(19, 30);
+      rudimentsSelected.push(flamIndex);
     case "Drag Rudiments":
-      return getRandomNumber(30, 40);
+      const dragIndex = getRandomIndex(30, 40);
+      rudimentsSelected.push(dragIndex);
+      break;
     default:
-      return;
+      console.log("Error: no checkboxes selected.");
   }
+
+  return rudimentsSelected;
 };
 
 const container = document.getElementById("img-container");
@@ -56,6 +73,10 @@ const onSubmit = (event) => {
 
   const data = Object.fromEntries(formData); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
   console.log(data);
+
+  const categories = Object.keys(data);
+  categories.shift();
+  console.log(categories);
 
   form.reset();
 };
