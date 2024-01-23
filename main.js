@@ -32,6 +32,8 @@ const onSubmit = (event) => {
 
   const data = Object.fromEntries(formData); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
   console.log(data);
+
+  form.reset();
 };
 
 form.addEventListener("submit", onSubmit);
