@@ -4,7 +4,7 @@ import { getRandomIndex } from "./helper-function.js";
 const logData = (data) => console.log(data);
 logData(rudiments);
 
-const selectRandom = (categories) => {
+const selectRandomRudiments = (categories) => {
   const indicesSelected = [];
 
   categories.forEach((category) => {
@@ -74,7 +74,7 @@ const onSubmit = (event) => {
   categories.shift();
   console.log(categories);
 
-  selectRandom(categories);
+  selectRandomRudiments(categories);
 
   form.reset();
 };
