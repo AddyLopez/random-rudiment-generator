@@ -6,3 +6,5 @@ export const getRandomIndex = (min, max) => {
     return getRandomIndex(min, max);
   }
 };
+
+/* The max and min range here ensures that the index generated applies to its proper category within the entire set of rudiments.*/
