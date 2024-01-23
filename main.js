@@ -26,6 +26,7 @@ const selectRandom = (categories) => {
       case "category3":
         const flamIndex = getRandomIndex(19, 30);
         indicesSelected.push(flamIndex);
+        break;
       case "category4":
         const dragIndex = getRandomIndex(30, 40);
         indicesSelected.push(dragIndex);
