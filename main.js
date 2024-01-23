@@ -30,6 +30,9 @@ const onSubmit = (event) => {
   event.preventDefault();
   const formData = new FormData(form);
   console.log(formData.get("category"));
+
+  const data = Object.fromEntries(formData);
+  console.log(data);
 };
 
 form.addEventListener("submit", onSubmit);
