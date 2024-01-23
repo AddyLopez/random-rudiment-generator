@@ -25,3 +25,11 @@ container.appendChild(fragment);
 
 const form = document.getElementById("form");
 console.log(form);
+
+const onSubmit = (event) => {
+  event.preventDefault();
+  const formData = new FormData(form);
+  console.log(formData.get("category"));
+};
+
+form.addEventListener("submit", onSubmit);
