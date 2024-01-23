@@ -22,3 +22,6 @@ rudiments.forEach((rudiment) => {
 });
 //console.log(fragment);
 container.appendChild(fragment);
+
+const form = document.getElementById("form");
+console.log(form);
