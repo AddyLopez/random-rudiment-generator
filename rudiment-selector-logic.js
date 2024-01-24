@@ -46,7 +46,6 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
     });
     count--;
   }
-  console.log(indicesSelected);
 
   /* When multiple categories are checked, the number of randomized indices collected in indicesSelected will exceed the number of rudiments selected in the form submitted. This larger randomized set ensures that the final set of pared down selections contains no bias toward any given category of rudiments. */
   if (indicesSelected.length > numberOfRudiments) {
@@ -67,7 +66,6 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
       };
       selectIndexFromSet();
     }
-    console.log(finalIndicesSelected);
     indicesSelected = finalIndicesSelected; // This reassignment ensures that the proper number of rudiments selected is being respected.
   }
   console.log(indicesSelected);
