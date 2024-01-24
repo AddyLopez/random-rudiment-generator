@@ -58,7 +58,7 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
           Math.random() * indicesSelected.length
         );
         // This logic ensures that no redundancies--only unique indices--will be added to the array named finalIndicesSelected.
-        if (!finalIndicesSelected.includes(indexSelected)) {
+        if (!finalIndicesSelected.includes(indicesSelected[indexSelected])) {
           finalIndicesSelected.push(indicesSelected[indexSelected]);
         } else {
           return selectIndexFromSet();
