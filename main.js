@@ -29,13 +29,14 @@ console.log(form);
 
 const onSubmit = (event) => {
   event.preventDefault();
+
   const formData = new FormData(form);
 
-  const data = Object.fromEntries(formData); // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries
+  const data = Object.fromEntries(formData); // convert form's data to object (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries)
   console.log(data);
 
   const categories = Object.keys(data);
-  categories.shift();
+  categories.shift(); // Easiest way to eliminate "number-of-rudiments" from the array of keys in order to isolate just the keys pertaining to the categories selected in the checklist.
   console.log(categories);
 
   selectRandomRudiments(categories);

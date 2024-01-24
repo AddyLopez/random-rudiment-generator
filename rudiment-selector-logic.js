@@ -38,7 +38,7 @@ export const selectRandomRudiments = (categories) => {
         indicesSelected.push(dragIndex);
         break;
       default:
-        console.log("Error: no checkboxes selected.");
+        return;
     }
   });
   console.log(indicesSelected);
