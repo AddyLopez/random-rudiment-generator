@@ -11,9 +11,11 @@ const getRandomIndex = (min, max) => {
 
 /* Randomized indices will be generated and returned as an array based on the categories checked in the form when submitted. */
 export const selectRandomRudiments = (categories, numberOfRudiments) => {
-  const indicesSelected = [];
+  let indicesSelected = [];
+  let count = numberOfRudiments;
 
-  while (numberOfRudiments) {
+  /* The array indicesSelected will collect numberOfRudiments per each category selected. So if the value of numberOfRudiments is 10 and four categories are selected, then 10 indices per category will be generated; that's 40 total indices. */
+  while (count) {
     categories.forEach((category) => {
       /* category1 (roll rudiments): indices 0 to 14,
          category2 (diddle rudiments): indices 15 to 18,
@@ -42,7 +44,31 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
           return;
       }
     });
-    numberOfRudiments--;
+    count--;
+  }
+  console.log(indicesSelected);
+
+  /* When multiple categories are checked, the number of randomized indices collected in indicesSelected will exceed the number of rudiments selected in the form submitted. This larger randomized set ensures that the final set of pared down selections contains no bias toward any given category of rudiments. */
+  if (indicesSelected.length > numberOfRudiments) {
+    let finalIndicesSelected = [];
+
+    // The loop ensures that the proper number of indices is returned based on numberOfRudiments.
+    for (let i = 0; i < numberOfRudiments; i++) {
+      const selectIndexFromSet = () => {
+        const indexSelected = Math.floor(
+          Math.random() * indicesSelected.length
+        );
+        // This logic ensures that no redundancies--only unique indices--will be added to the array named finalIndicesSelected.
+        if (!finalIndicesSelected.includes(indexSelected)) {
+          finalIndicesSelected.push(indexSelected);
+        } else {
+          return selectIndexFromSet();
+        }
+      };
+      selectIndexFromSet();
+    }
+    console.log(finalIndicesSelected);
+    indicesSelected = finalIndicesSelected; // This reassignment ensures that the proper number of rudiments selected is being respected.
   }
   console.log(indicesSelected);
 
