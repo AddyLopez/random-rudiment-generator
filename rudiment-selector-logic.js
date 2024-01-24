@@ -14,6 +14,7 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
   let count = numberOfRudiments;
   let indicesSelected = [];
   /* The array indicesSelected will collect numberOfRudiments per each category selected. So if the value of numberOfRudiments is 10 and four categories are selected, then 10 indices per category will be generated; that's 40 total indices. */
+  /* To implement a recursive solution to ensure that only unique indices are included in a single category when more than one rudiment is selected results in a stack overflow. */
   while (count) {
     categories.forEach((category) => {
       /* category1 (roll rudiments): indices 0 to 14,
