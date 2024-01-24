@@ -11,9 +11,8 @@ const getRandomIndex = (min, max) => {
 
 /* Randomized indices will be generated and returned as an array based on the categories checked in the form when submitted. */
 export const selectRandomRudiments = (categories, numberOfRudiments) => {
-  let indicesSelected = [];
   let count = numberOfRudiments;
-
+  let indicesSelected = [];
   /* The array indicesSelected will collect numberOfRudiments per each category selected. So if the value of numberOfRudiments is 10 and four categories are selected, then 10 indices per category will be generated; that's 40 total indices. */
   while (count) {
     categories.forEach((category) => {
@@ -41,7 +40,7 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
           indicesSelected.push(dragIndex);
           break;
         default:
-          return;
+          return console.log("No categories selected.");
       }
     });
     count--;
@@ -59,7 +58,7 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
         );
         // This logic ensures that no redundancies--only unique indices--will be added to the array named finalIndicesSelected.
         if (!finalIndicesSelected.includes(indexSelected)) {
-          finalIndicesSelected.push(indexSelected);
+          finalIndicesSelected.push(indicesSelected[indexSelected]);
         } else {
           return selectIndexFromSet();
         }
