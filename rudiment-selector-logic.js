@@ -17,7 +17,9 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
   /* To implement a recursive solution to ensure that only unique indices are included in a single category when more than one rudiment is selected results in a stack overflow. */
   const runSwitchStatement = () => {
     let count = numberOfRudiments;
-
+    if (categories.length === 1 && categories.includes("category2")) {
+      count = 4;
+    }
     while (count) {
       categories.forEach((category) => {
         /* category1 (roll rudiments): indices 0 to 14,
