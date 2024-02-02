@@ -57,6 +57,7 @@ img {
   border: hsl(0, 0%, 100%);
   border-radius: 12px;
   height: 94px;
+  max-width: 100%;
 }
 
 #checklist {
