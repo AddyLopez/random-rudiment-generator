@@ -56,7 +56,7 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
   console.log(indicesSelected);
 
   if (indicesSelected.length === numberOfRudiments) {
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 6; i++) {
       runSwitchStatement();
       // Generate more indices so that any duplicates in the array (especially probable as numberOfRudiments approaches 10) can be removed below. At that extreme, without a set larger than 10, the statistical likelihood of duplicates practically ensures a stack overflow in the code below, were it to allow a set of 10.
       // Generate even more indices so that when category2 is selected the odds of randomly generating all four options are much higher to avoid a stack overflow.
