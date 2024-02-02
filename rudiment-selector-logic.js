@@ -69,22 +69,28 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
     let finalIndicesSelected = [];
 
     // The loop ensures that the proper number of indices is returned based on numberOfRudiments.
-    for (let i = 0; i < numberOfRudiments; i++) {
-      const selectIndexFromSet = () => {
-        let indexSelected = Math.floor(Math.random() * indicesSelected.length);
-        // This logic ensures that no redundancies--only unique indices--will be added to the array named finalIndicesSelected.
-        if (finalIndicesSelected.length === numberOfRudiments) {
-          return;
-        } else if (
-          !finalIndicesSelected.includes(indicesSelected[indexSelected])
-        ) {
-          finalIndicesSelected.push(indicesSelected[indexSelected]);
-          return;
-        } else {
-          return selectIndexFromSet();
-        }
-      };
-      selectIndexFromSet();
+    try {
+      for (let i = 0; i < numberOfRudiments; i++) {
+        const selectIndexFromSet = () => {
+          let indexSelected = Math.floor(
+            Math.random() * indicesSelected.length
+          );
+          // This logic ensures that no redundancies--only unique indices--will be added to the array named finalIndicesSelected.
+          if (finalIndicesSelected.length === numberOfRudiments) {
+            return;
+          } else if (
+            !finalIndicesSelected.includes(indicesSelected[indexSelected])
+          ) {
+            finalIndicesSelected.push(indicesSelected[indexSelected]);
+            return;
+          } else {
+            return selectIndexFromSet();
+          }
+        };
+        selectIndexFromSet();
+      }
+    } catch (error) {
+      console.error(error);
     }
     indicesSelected = finalIndicesSelected; // This reassignment ensures that the proper number of rudiments selected is being respected.
   }
