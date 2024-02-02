@@ -12,6 +12,10 @@ console.log(form);
 
 const onSubmit = (event) => {
   event.preventDefault();
+  // Clear the images when form is submitted again without a page refresh. That way, the newly generated rudiments won't appear after the previously generated list.
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
 
   const formData = new FormData(form);
 
