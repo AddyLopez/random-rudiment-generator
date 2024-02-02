@@ -41,6 +41,7 @@ const onSubmit = (event) => {
         const img = document.createElement("img");
         const figcaption = document.createElement("figcaption");
         img.src = rudiments[finalSelection]["src"];
+        img.alt = rudiments[finalSelection]["name"];
         figcaption.textContent = `${rudiments[finalSelection]["id"]}. ${rudiments[finalSelection]["name"]}`;
         figure.appendChild(img);
         figure.appendChild(figcaption);
