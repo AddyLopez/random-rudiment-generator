@@ -1,12 +1,12 @@
-export const pathPrefix = "./images/40_Essential_Rudiments/";
-export const types = [
+const pathPrefix = "./images/40_Essential_Rudiments/";
+const types = [
   "Roll_Rudiments",
   "Diddle_Rudiments",
   "Flam_Rudiments",
   "Drag_Rudiments",
 ];
 
-export const formatURL = (array) => {
+const formatURL = (array) => {
   return array.map((element) => {
     return (element.src =
       `${pathPrefix}${element["type"]}` +
