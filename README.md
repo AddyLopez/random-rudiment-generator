@@ -8,6 +8,10 @@ This program generates a randomized set of rudiments, correctly numbered, from t
 
 Simply enter the number of rudiments desired—between one and ten—and check up to four boxes. In producing its randomized selection, the generator will consider only those categories checked.
 
+## Project Preview
+
+![40 Essential Rudiments Generator preview](./src/images/Project_Preview/rudiments-generator-preview.png)
+
 ## Attribution
 
 Musical notation courtesy of the Percussive Arts Society: [https://www.pas.org/resources/rudiments](https://www.pas.org/resources/rudiments)
