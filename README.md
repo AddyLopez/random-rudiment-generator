@@ -2,7 +2,7 @@
 
 ## View project:
 
-**_View this project:_**[https://visionary-sunflower-70af02.netlify.app/](https://visionary-sunflower-70af02.netlify.app/)
+**_View this project:_** [https://visionary-sunflower-70af02.netlify.app/](https://visionary-sunflower-70af02.netlify.app/)
 
 ## Description
 
@@ -12,4 +12,4 @@ Simply enter the number of rudiments desired—between one and ten—and check u
 
 ## Attribution
 
-Notation courtesy of the Percussive Arts Society: [https://www.pas.org/resources/rudiments](https://www.pas.org/resources/rudiments)
+Musical notation courtesy of the Percussive Arts Society: [https://www.pas.org/resources/rudiments](https://www.pas.org/resources/rudiments)
