@@ -44,24 +44,6 @@ div.img-container {
   grid-template-columns: repeat(2, 1fr);
 }
 
-figure {
-  border-bottom: 2px ridge hsl(0, 0%, 37%);
-  padding: 12px 12px;
-  margin: 0 auto;
-  width: 50%;
-}
-
-figcaption {
-  font-size: 0.38rem;
-}
-
-img {
-  border: hsl(0, 0%, 100%);
-  border-radius: 12px;
-  height: 94px;
-  max-width: 100%;
-}
-
 footer {
   font-size: 0.35rem;
   padding: 12px;
@@ -73,6 +55,25 @@ a {
   text-decoration: none;
   color: hsl(33, 100%, 65%);
 }
+
+figure {
+  border-bottom: 2px ridge hsl(0, 0%, 37%);
+  padding: 12px 12px;
+  margin: 0 auto;
+  width: 50%;
+}
+
+img {
+  border: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  height: 94px;
+  max-width: 100%;
+}
+
+figcaption {
+  font-size: 0.38rem;
+}
+
 #checklist {
   text-align: right;
 }
