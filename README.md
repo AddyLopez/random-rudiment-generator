@@ -1,7 +1,5 @@
 # 40 Essential Rudiments Generator
 
-## View project:
-
 **_View this project:_** [https://visionary-sunflower-70af02.netlify.app/](https://visionary-sunflower-70af02.netlify.app/)
 
 ## Description
