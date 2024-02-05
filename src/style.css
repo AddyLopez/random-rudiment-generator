@@ -142,7 +142,7 @@ a:focus {
   transition: transform 0s ease-in-out;
 }
 
-@media only screen and (max-width: 845px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (max-width: 845px) {
   footer p {
     font-size: 0.3rem;
   }
