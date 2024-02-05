@@ -80,7 +80,7 @@ figure {
   border-bottom: 2px ridge hsl(0, 0%, 37%);
   margin: 0 auto;
   padding: 32px 0 12px 0;
-  width: 50%;
+  width: 60%;
 }
 
 img {
@@ -91,7 +91,7 @@ img {
 }
 
 figcaption {
-  font-size: 0.38rem;
+  font-size: 0.36rem;
 }
 
 #checklist {
@@ -153,5 +153,8 @@ a:focus {
   p {
     text-align: center;
     width: auto;
+  }
+  figure {
+    width: 90%;
   }
 }
