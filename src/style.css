@@ -8,9 +8,10 @@ body {
   font-family: "IM Fell Double Pica SC", serif;
   font-weight: bold;
   letter-spacing: 1px;
+  line-height: 1.4;
+  margin: 0;
   text-align: center;
   transition: all 2500ms ease-in-out;
-  margin: 0;
 }
 
 header {
@@ -18,14 +19,14 @@ header {
 }
 
 h1 {
-  margin: 32px 0;
   font-size: 1rem;
+  margin: 32px 0;
 }
 
 p {
   font-size: 0.44rem;
-  text-align: justify;
   margin: 20px auto;
+  text-align: justify;
   width: 75%;
 }
 
@@ -35,47 +36,50 @@ main {
 }
 
 form {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin: 0 auto;
 }
 
 form section {
-  font-size: 0.45rem;
   border-bottom: 2px ridge hsl(0, 0%, 37%);
+  font-size: 0.45rem;
   padding: 12px;
 }
 
 div.form-container {
   margin: 0 auto;
-  width: 40%;
 }
 
 div.img-container {
-  /*margin: 20px 15px 40px 15px;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
 footer {
-  font-size: 0.35rem;
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 32px 0;
 }
 
+footer p {
+  font-size: 0.35rem;
+  margin: 0;
+  text-align: center;
+}
+
 a {
-  text-decoration: none;
   color: hsl(33, 100%, 65%);
+  text-decoration: none;
 }
 
 figure {
   border-bottom: 2px ridge hsl(0, 0%, 37%);
-  padding: 32px 0 12px 0;
   margin: 0 auto;
+  padding: 32px 0 12px 0;
   width: 50%;
 }
 
@@ -106,8 +110,8 @@ figcaption {
 #flam,
 #drag {
   accent-color: hsl(33, 100%, 65%);
-  cursor: pointer;
   border-bottom: 2px ridge hsl(0, 0%, 37%);
+  cursor: pointer;
 }
 
 #submit {
@@ -119,11 +123,11 @@ figcaption {
   border-radius: 10px;
   color: hsl(33, 100%, 65%);
   cursor: pointer;
-  padding: 10px;
-  margin-top: 15px;
   font-family: "IM Fell Double Pica SC", serif;
-  letter-spacing: 1px;
   font-size: 0.4rem;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  padding: 10px;
   transition: all 200ms ease-in-out;
 }
 
