@@ -8,9 +8,13 @@ This program generates a randomized set of rudiments, correctly numbered, from t
 
 Simply enter the number of rudiments desired—between one and ten—and check up to four boxes. In producing its randomized selection, the generator will consider only those categories checked.
 
-## Project Preview
+## Project Previews
 
-![40 International Drum Rudiments Generator preview](./src/images/Project_Preview/preview-rudiments-generator.png)
+Submit form:
+![40 International Drum Rudiments Generator form preview](./src/images/Project_Preview/rudiments-generator-preview-1.png)
+
+Example of results:
+![40 International Drum Rudiments Generator results preview](./src/images/Project_Preview/rudiments-generator-preview-2.png)
 
 ## Attribution
 
