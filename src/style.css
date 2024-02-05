@@ -74,7 +74,7 @@ a {
 
 figure {
   border-bottom: 2px ridge hsl(0, 0%, 37%);
-  padding: 12px 12px;
+  padding: 32px 0 12px 0;
   margin: 0 auto;
   width: 50%;
 }
