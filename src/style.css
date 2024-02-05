@@ -142,7 +142,7 @@ a:focus {
   transition: transform 0s ease-in-out;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 845px) {
   figcaption {
     font-size: 0.35rem;
   }
