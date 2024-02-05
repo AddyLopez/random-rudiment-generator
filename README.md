@@ -22,4 +22,4 @@ Simply enter the number of rudiments desired—between one and ten—and check u
 
 Musical notation courtesy of the Percussive Arts Society: [https://www.pas.org/resources/rudiments](https://www.pas.org/resources/rudiments)
 
-Download a [pdf](https://www.pas.org/docs/default-source/default-document-library/pas-drum-rudiments-2018dcccc96de1726e19ba7fff00008669d1.pdf?sfvrsn=fdbeaea5_6) of all 40 International Drum Rudiments and start drumming today!
+Download a [pdf of all 40 International Drum Rudiments](https://www.pas.org/docs/default-source/default-document-library/pas-drum-rudiments-2018dcccc96de1726e19ba7fff00008669d1.pdf?sfvrsn=fdbeaea5_6) and start drumming today!
