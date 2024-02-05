@@ -91,7 +91,7 @@ img {
 }
 
 figcaption {
-  font-size: 0.36rem;
+  font-size: 0.44rem;
 }
 
 #checklist {
@@ -142,6 +142,11 @@ a:focus {
   transition: transform 0s ease-in-out;
 }
 
+@media only screen and (max-width: 768px) {
+  figcaption {
+    font-size: 0.35rem;
+  }
+}
 @media only screen and (max-width: 480px) {
   header {
     padding-right: 12px;
@@ -156,5 +161,8 @@ a:focus {
   }
   figure {
     width: 90%;
+  }
+  footer p {
+    font-size: 0.3rem;
   }
 }
