@@ -146,6 +146,9 @@ a:focus {
   figcaption {
     font-size: 0.35rem;
   }
+  footer p {
+    font-size: 0.3rem;
+  }
 }
 @media only screen and (max-width: 480px) {
   header {
