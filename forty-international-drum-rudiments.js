@@ -1,4 +1,4 @@
-const pathPrefix = "./src/images/40_Essential_Rudiments/";
+const pathPrefix = "./src/images/40_International_Drum_Rudiments/";
 const types = [
   "Roll_Rudiments",
   "Diddle_Rudiments",

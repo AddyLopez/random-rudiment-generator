@@ -1,4 +1,4 @@
-import { rudiments } from "./forty-essential-rudiments.js";
+import { rudiments } from "./forty-international-drum-rudiments.js";
 import { selectRandomRudiments } from "./rudiment-selector-logic.js";
 
 const container = document.getElementById("img-container");
