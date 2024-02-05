@@ -18,7 +18,7 @@ Simply enter the number of rudiments desired—between one and ten—and check u
 
 ![40 International Drum Rudiments Generator results preview](./src/images/Project_Preview/rudiments-generator-preview-2.png)
 
-## Attribution
+## Attribution & Education
 
 Musical notation courtesy of the Percussive Arts Society: [https://www.pas.org/resources/rudiments](https://www.pas.org/resources/rudiments)
 
