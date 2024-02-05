@@ -141,3 +141,17 @@ a:focus {
   transform: translate(2px, 1px);
   transition: transform 0s ease-in-out;
 }
+
+@media only screen and (max-width: 480px) {
+  header {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  h1 {
+    font-size: 0.7rem;
+  }
+  p {
+    text-align: center;
+    width: auto;
+  }
+}
