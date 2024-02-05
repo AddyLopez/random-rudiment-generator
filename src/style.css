@@ -142,14 +142,18 @@ a:focus {
   transition: transform 0s ease-in-out;
 }
 
-@media only screen and (max-width: 845px) {
-  figcaption {
-    font-size: 0.35rem;
-  }
+@media only screen and (max-width: 845px) and (orientation: landscape) {
   footer p {
     font-size: 0.3rem;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  figcaption {
+    font-size: 0.35rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   header {
     padding-right: 12px;
