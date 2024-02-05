@@ -123,10 +123,6 @@ a:focus {
   text-decoration: underline;
 }
 
-#submit:hover {
-  background-color: hsl(240, 16%, 25%);
-  color: hsl(33, 100%, 55%);
-}
 #submit:active {
   background-color: hsl(240, 16%, 0%);
   transform: translate(2px, 1px);
