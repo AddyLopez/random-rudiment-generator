@@ -73,7 +73,6 @@ footer p {
 
 a {
   color: hsl(33, 100%, 65%);
-  text-decoration: none;
 }
 
 figure {
@@ -129,11 +128,6 @@ figcaption {
   margin-top: 15px;
   padding: 10px;
   transition: all 200ms ease-in-out;
-}
-
-a:hover,
-a:focus {
-  text-decoration: underline;
 }
 
 #submit:active {
