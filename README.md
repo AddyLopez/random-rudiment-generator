@@ -42,7 +42,7 @@ Originally assigned as an open-ended student project for Codecademy's Full Stack
 
 - **_Accessibility rating_** by Lighthouse audit: 100/100 for desktops, 100/100 for mobile devices.
 
-- Coded in VS Code with tools for a **_professional development workflow and continuous deployment_**, such as Live Server, GitHub, and hosting on Netlify
+- Coded in VS Code with tools for a **_professional development workflow and continuous deployment_**, such as Live Server, Git, GitHub, and hosting on Netlify
 
 ## Project Previews
 
