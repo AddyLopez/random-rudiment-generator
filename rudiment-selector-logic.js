@@ -56,7 +56,7 @@ export const selectRandomRudiments = (categories, numberOfRudiments) => {
 
   runSwitchStatement();
 
-  if (indicesSelected.length === numberOfRudiments) {
+  if (indicesSelected.length <= numberOfRudiments) {
     for (let i = 0; i < 6; i++) {
       runSwitchStatement();
       // Generate more indices so that any duplicates in the array (especially probable as numberOfRudiments approaches 10) can be removed below. At that extreme, without a set larger than 10, the statistical likelihood of duplicates practically ensures a stack overflow in the code below, were it to allow a set of 10.
